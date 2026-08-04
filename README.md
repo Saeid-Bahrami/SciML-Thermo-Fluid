@@ -8,7 +8,7 @@
 [![API Microservice](https://img.shields.io/badge/FastAPI-PyTorch%20CPU%20Backend-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://saeidbahrami.com/AI-CFDLab.php)
 [![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
 
-*Developed by **Saeid Bahrami Ein-Al-Ghashi** | Computational Fluid Dynamics & SciML Engineer*
+*Developed by **Saeid Bahrami Eynolghasi** | Computational Fluid Dynamics & SciML Engineer*
 
 ---
 
