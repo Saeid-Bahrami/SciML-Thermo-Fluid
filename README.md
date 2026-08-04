@@ -41,7 +41,7 @@ This project bridges high-fidelity fluid mechanics with real-time inference by d
 ```text
 +--------------------------+     +----------------------------+     +-------------------------------+
 |   Parametric CFD Solver  | --> |  PyTorch FNO-2D Pipeline   | --> | FastAPI CPU Cloud Microservice|
-| (Pure Vectorized Python) |     |  (L2 Spatial Loss & Modes) |     | (O(1) Real-Time Inference UI) |
+| (Pure Vectorized Python) |     |  (L2 Spatial Loss & Modes) |     | (Real-Time Inference UI) |
 +--------------------------+     +----------------------------+     +-------------------------------+
 ```
 
