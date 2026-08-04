@@ -126,14 +126,6 @@ The microservice backend (`app.py`) is engineered for production-grade reliabili
 │   │   ├── weights_real_v2.npz       # Pre-trained lightweight Fourier Neural Operator (FNO) weights
 │   │   └── README.md                 # Architecture documentation & Live API Endpoint link                # Container Deployment Configuration
 ```
-6. Author & Contact
-Saeid Bahrami Eynolghasi
-
-Specializing in Computational Fluid Dynamics, Scientific Machine Learning, and Thermal Systems Software.
-
-Interactive Portfolio: saeidbahrami.com
-
-Live CFD Lab: saeidbahrami.com/AI-CFDLab.php
 
 ---
 
