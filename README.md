@@ -21,7 +21,7 @@
 
 ##  Notice on Repository Scope & Live Execution
 
-> **Note for Principal Investigators (PIs) and Reviewers:**
+> **Note:**
 > Local cloning of this repository is **not required** to evaluate the surrogate model performance. High-fidelity CFD dataset generation and PyTorch model training require significant compute resources and specialized dependencies. 
 > 
 > To demonstrate **sub-second inference**, the trained model weights are serving real-time predictions via an automated FastAPI microservice hosted on cloud infrastructure. 
