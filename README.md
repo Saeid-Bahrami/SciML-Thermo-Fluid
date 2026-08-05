@@ -84,10 +84,14 @@ To train the AI, I needed a diverse dataset of different room conditions. I used
 > **Why LHS?** 
 > In Scientific Machine Learning, the quality of the dataset is just as important as the neural network. Unlike standard random sampling (which can leave "blind spots") or grid sampling (which is computationally expensive), LHS is a statistical method that guarantees the entire physical space is sampled evenly. This ensures the AI learns the fluid behavior across all possible scenarios without wasting computing power on redundant data.
 
-### FNO Architecture & Training (PyTorch)
-* **Spectral Modes:** Used **16 × 16** Fourier modes to help the network understand complex fluid eddies and heat transfer.
+### FNO Architecture & PyTorch TrainingData
+* **Normalization:** Raw inputs and fields are scaled to a $[0, 1]$ range using Min-Max scaling to ensure stable gradient descent, then split into an 80/20 train/test ratio.
+* **Spectral Modes & Channels:** The FNO model is configured with $16 \times 16$ Fourier modes to capture turbulent eddies and 64 hidden channels to resolve non-linear momentum-thermal cross-coupling.
+ 
+* **Training Loop:** The network is trained for 100 epochs with a batch size of 16 using the Adam optimizer ($lr=1e^{-3}$).
 * **Hidden Channels:** Expanded to 64 channels to capture the non-linear relationship between temperature and velocity.
-* **Loss Function:** Used relative **L2 norm loss** (`LpLoss(d=2, p=2)`) instead of standard MSE. This preserves the overall physical shape of the fluid.
+* **Loss Function:** Integrated relative $L^2$ norm loss (LpLoss(d=2, p=2)) is used instead of standard MSE to preserve continuous physical field structures.
+* **HPC Memory Safety:** HPC Memory Safety: The training loop utilizes non_blocking=True for fast GPU transfers and set_to_none=True for gradients to eliminate VRAM memory leaks.
 * **Lightweight Export:** Saved the trained weights into a standard `.npz` file so they can run extremely fast on a simple CPU without memory leaks.
 
 ---
