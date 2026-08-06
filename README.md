@@ -24,7 +24,7 @@
 > **Test the Live Dashboard:** 
 > You do not need to download this repository or install heavy software to test the model. Training the PyTorch model and generating the CFD dataset requires significant computing power. 
 > 
-> Instead, I have deployed the trained AI model on a cloud server using a **FastAPI** microservice. You can test the sub-second, real-time predictions directly in your browser:
+> Instead, I have deployed the trained AI model on a cloud server using a **FastAPI** microservice. You can test the real-time predictions directly in your browser:
 > **[saeidbahrami.com/AI-CFDLab.php](https://saeidbahrami.com/AI-CFDLab.php)**
 > 
 > *This repository serves as documentation of software architecture, physics logic, and AI deployment.*
