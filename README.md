@@ -27,7 +27,7 @@
 > Instead, I have deployed the trained AI model on a cloud server using a **FastAPI** microservice. You can test the sub-second, real-time predictions directly in your browser:
 > **[saeidbahrami.com/AI-CFDLab.php](https://saeidbahrami.com/AI-CFDLab.php)**
 > 
-> *This repository serves as transparent proof of my software architecture, physics logic, and AI deployment skills.*
+> *This repository serves as documentation of software architecture, physics logic, and AI deployment.*
 
 ---
 
